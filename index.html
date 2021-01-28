@@ -5,7 +5,7 @@
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="description" content="La Chouette Agence, Entreprise de Web Design basée à Lyon">
-    <link rel="shortcut icon" type="image/webp" href="favicon.jpg">
+    <link rel="shortcut icon" type="image/webp" href="favicon.webp">
     
 	<!-- production <link rel="stylesheet" defer href="./css/style.min.css"> -->
 
@@ -44,13 +44,15 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="#service">Nos Services</a>
 					</li>
 					<li>
+						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="#contact">Contact</a>
 					</li>
+					
 				</ul>
 			</div>
 		</nav>
@@ -80,9 +82,7 @@
 <div class="bloc bgc-white l-bloc" id="bloc-2-services">
 	<div class="container bloc-md">
 		<div class="row">
-			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.webp" />
-			</div>
+			<h2 class="col-sm-12 text-center">La chouette agence est une agence web qui accompagne les entreprises pour renforcer leur stratégie digitale.</h2>
 		</div>
 		<div class="row voffset-lg med-width-whitespace">
 			<section class="col-sm-4">
@@ -121,7 +121,12 @@
 		</div>
 		<div class="row voffset-lg voffset">
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.webp" />
+				<blockquote>
+					<q>La chouette agence est une excellente agence web! Les web designers ont réussi à capturer l'essence de notre
+						entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en lignes à Lyon.
+					</q>
+					<footer>Maxime Guibard, PDG de À vos fourchettes</footer>
+				</blockquote>
 
 			</div>
 		</div>
@@ -147,16 +152,16 @@
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<div class="bloc  l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.webp" />
+				<h2>Nous travaillons avec beaucoup de clients, voici nos réalisations.</h2>
 			</div>
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.webp" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -165,7 +170,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.webp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -198,21 +203,71 @@
 </div>
 <!-- bloc-4-portfolio END -->
 
-<!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
-	<div class="container bloc-lg">
-		<div class="row">
-			<h2 class="mg-md text-center tc-white">
-				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
-			</h2>
-			<div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-5-cta END -->
 
+
+<section class="bloc  d-bloc " id="contact">
+	<div class="container bloc-lg">
+		<section class="bloc   d-bloc " id="bloc-6">
+			<div class="container bloc-lg">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="text-center hero-bloc-text tc-white">
+							C'est partie pour votre super projet
+						</h2>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bloc bgc-white l-bloc" id="bloc-7">
+			<div class="container bloc-lg">
+				<div class="row">
+					<section class="col-sm-6">
+						<form id="form_1" novalidate="">
+							<div class="form-group">
+								<label>
+									Nom
+									<input id="name" class="form-control" required="">
+								</label>
+								
+							<div class="help-block"></div></div>
+							<div class="form-group">
+								<label>
+									Adresse email
+									<input id="email" class="form-control" type="email" required="">
+								</label>
+								
+							<div class="help-block"></div></div>
+							<div class="form-group">
+								<label>
+									Comment nous avez-vous connu ?
+									<input class="form-control" type="text" required="" id="input_504">
+								</label>
+								
+							<div class="help-block"></div></div>
+							<div class="form-group">
+								<label>
+									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+									<textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
+								</label>
+							<div class="help-block"></div></div> 
+							<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine form-control" type="submit" value="Envoyer">
+						</form>
+					</section>
+					<section class="col-sm-6">
+						<div>
+							<a href="mailto:contact@lachouetteagence.com" id="contact_email">contact@lachouetteagence.com</a>
+							<address>
+							2 place Sathonay<br>
+							69001 Lyon</address>
+							<p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
@@ -249,6 +304,8 @@
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->
+
+
 
 </div>
 <!-- Principal conteneur END -->
