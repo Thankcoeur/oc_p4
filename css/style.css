@@ -27,6 +27,19 @@ a:hover {
     background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
 
+.border {
+
+
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    z-index: 100;
+}
+.border-inset {
+
+    box-shadow: inset 0px 0px 5px 0px black;
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -651,7 +664,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    
 }
 
 .container {
@@ -809,8 +822,20 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("../img/dots-bg.webp");
+.bg-degrad-yellow {
+    background: rgb(198,61,44);
+background: linear-gradient(90deg, rgba(198,61,44,1) 15%, rgb(240, 166, 30) 96%);
+}
+
+.bg-degrad-grey {
+
+    background: rgb(201,196,195);
+background: linear-gradient(90deg, rgba(201,196,195,1) 15%, rgba(145,145,141,1) 96%);
+}
+
+.c-white {
+
+    color: white;
 }
 
 .bg-lines-h2-bg {
