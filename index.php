@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -7,15 +8,68 @@
 	<meta name="description" content="La Chouette Agence, Entreprise de Web Design basée à Lyon">
     <link rel="shortcut icon" type="image/webp" href="favicon.webp">
     
-	<!-- production <link rel="stylesheet" defer href="./css/style.min.css"> -->
+	 
+	 <?php 
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	 function getstyle($nom) {
+
+$contenu_fichier = file_get_contents("./css/$nom.css");
+
+
+echo "<style>$contenu_fichier</style>";
+
+
+
+	 }
+
+	 function getjs($nom) {
+
+		$contenu_fichier = file_get_contents("./js/$nom.js");
+		
+		
+		echo "<script>$contenu_fichier</script>";
+		
+		
+		
+			 }
+
+	function getimg($name,$widht,$height,$alt,$class) {
+		// A few settings
+
+
+// Read image path, convert to base64 encoding
+$imageData = base64_encode(file_get_contents("img/$name.webp"));
+
+// Format the image SRC:  data:{mime};base64,{data};
+$src = 'data:webp '.';base64,'.$imageData;
+
+// Echo out a sample image
+echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$alt,'" src="', $src, '">';
+
+
+
+
+	}
+
+	
+
+
+	 getstyle("et-line");
+	 getstyle("bootstrap");
+	 getstyle("font-awesome");
+	 getstyle("style");
+
+	 getjs("min");
+
+	 
+
+
+
+
+?>
+	
 	
     
-	<script defer src="./js/min.js"></script>
 
     <title>La Chouette Agence - Entreprise de Web Design - Lyon
 	</title>
@@ -27,6 +81,8 @@
     
 </head>
 <body>
+
+
 <!-- Principal conteneur -->
 <div class="page-container">
     
@@ -36,7 +92,8 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.webp" alt="paris web design logo agence web meilleure agence" height="30" /></a>
+				<a class="navbar-brand" href="index.html"><?php getimg("la-chouette-agence","386","74","","") ?>
+</a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -65,12 +122,12 @@
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.webp" class="center-block image-resize-mode" width="150" height="150" alt="La chouette agence, agence web paris, création logo paris" />
+				<?php getimg("logo","150","150","logo du site","center-block image-resize-mode") ?>
 				<h1 class="text-center hero-bloc-text c-white ">
 					La Chouette Agence - Entreprise de Web Design - Lyon
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Nous Contacter</a>
+					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero " id="cta-hero">Nous Contacter</a>
 				</div>
 			</div>
 		</div>
@@ -161,7 +218,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.webp" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><?php getimg("1","300","300","","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -170,7 +227,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.webp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><?php getimg("2","300","300","","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -181,7 +238,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.webp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><?php getimg("3","300","300","","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -190,7 +247,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.webp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><?php getimg("4","300","300","","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -211,7 +268,7 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
-						<h2 class="text-center hero-bloc-text tc-white">
+						<h2 class="text-center hero-bloc-text tc-white degrade">
 							C'est partie pour votre super projet
 						</h2>
 						
@@ -251,7 +308,7 @@
 									<textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
 								</label>
 							<div class="help-block"></div></div> 
-							<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine form-control" type="submit" value="Envoyer">
+							<input class="bloc-button h-48 btn btn-lg btn-block cta-hero btn-atomic-tangerine form-control bg-degrad-yellow" type="submit" value="Envoyer">
 						</form>
 					</section>
 					<section class="col-sm-6">
@@ -269,7 +326,7 @@
 	</div>
 </section>
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc  d-bloc bg-degrad-yellow" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -302,7 +359,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 
