@@ -92,7 +92,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><?php getimg("la-chouette-agence","386","74","logo de la chouette angence","") ?>
+				<a class="navbar-brand" href="index.html"><?php getimg("la-chouette-agence","386","72","logo de la chouette angence","") ?>
 </a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -127,7 +127,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 					La Chouette Agence - Entreprise de Web Design - Lyon
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero " id="cta-hero">Nous Contacter</a>
+					<a href="page2.html" class="btn btn-lg btn-clean btn-rd c-white " id="cta-hero">Nous Contacter</a>
 				</div>
 			</div>
 		</div>
@@ -218,7 +218,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><?php getimg("1","300","300","photos de plusieurs livre ","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/livre.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><?php getimg("livre","300","300","photos de plusieurs livre ","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -227,7 +227,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><?php getimg("2","300","300","image d' une personne prenant une photo","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/photo.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><?php getimg("photo","300","300","image d' une personne prenant une photo","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -238,7 +238,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><?php getimg("3","300","300","img d' une table comprenant un ordianteur","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/pc_other.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><?php getimg("pc_other","300","300","img d' une table comprenant un ordianteur","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -247,7 +247,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><?php getimg("4","300","300","image d' un bureau avec deux ordinateur cote a cote","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/pc.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><?php getimg("pc","300","300","image d' un bureau avec deux ordinateur cote a cote","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -276,7 +276,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 				</div>
 			</div>
 		</section>
-		<section class="bloc bgc-white l-bloc" id="bloc-7">
+		<section class="bloc c-white l-bloc bg-degrad-yellow border" id="bloc-7">
 			<div class="container bloc-lg">
 				<div class="row">
 					<section class="col-sm-6">
@@ -308,7 +308,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 									<textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
 								</label>
 							<div class="help-block"></div></div> 
-							<input class="bloc-button h-48 btn btn-lg btn-block cta-hero btn-atomic-tangerine form-control bg-degrad-yellow" type="submit" value="Envoyer">
+							<input class="bloc-button h-48 btn btn-lg btn-block cta-hero  form-control " type="submit" value="Envoyer">
 						</form>
 					</section>
 					<section class="col-sm-6">
@@ -326,13 +326,11 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 	</div>
 </section>
 <!-- Footer - bloc-8 -->
-<footer class="bloc  d-bloc bg-degrad-yellow" id="bloc-8">
+<footer class="bloc  d-bloc " id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
+				
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
