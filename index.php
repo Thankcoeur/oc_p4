@@ -92,7 +92,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><?php getimg("la-chouette-agence","386","74","","") ?>
+				<a class="navbar-brand" href="index.html"><?php getimg("la-chouette-agence","386","74","logo de la chouette angence","") ?>
 </a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -218,7 +218,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><?php getimg("1","300","300","","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><?php getimg("1","300","300","photos de plusieurs livre ","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -227,7 +227,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><?php getimg("2","300","300","","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><?php getimg("2","300","300","image d' une personne prenant une photo","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -238,7 +238,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><?php getimg("3","300","300","","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><?php getimg("3","300","300","img d' une table comprenant un ordianteur","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -247,7 +247,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><?php getimg("4","300","300","","img-responsive portfolio-thumb") ?></a>
+				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><?php getimg("4","300","300","image d' un bureau avec deux ordinateur cote a cote","img-responsive portfolio-thumb") ?></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -313,7 +313,7 @@ echo '<img class="',$class,'" width="',$widht,'"  height="',$height,'" alt="',$a
 					</section>
 					<section class="col-sm-6">
 						<div>
-							<a href="mailto:contact@lachouetteagence.com" id="contact_email">contact@lachouetteagence.com</a>
+							<a href="mailto:contact@lachouetteagence.com"  id="contact_email">contact@lachouetteagence.com</a>
 							<address>
 							2 place Sathonay<br>
 							69001 Lyon</address>
